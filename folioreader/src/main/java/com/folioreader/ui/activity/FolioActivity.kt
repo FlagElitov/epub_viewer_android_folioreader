@@ -449,6 +449,9 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
             UiUtil.setColorIntToDrawable(config.currentThemeColor, menu.findItem(R.id.itemTts).icon)
 
             if (!config.isShowTts) menu.findItem(R.id.itemTts).isVisible = false
+            Log.e("CONFIG DATA", config.toString())
+            menu.removeItem(2131230775);
+
         } catch (e: Exception) {
             Log.e("FOLIOREADER", e.message.toString())
         }
