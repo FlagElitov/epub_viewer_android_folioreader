@@ -534,7 +534,10 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
                 showMediaController()
                 return true
             }
-            else -> return super.onOptionsItemSelected(item)
+            else -> {
+                Log.d(LOG_TAG, "-> onOptionsItemSelected -> " + item.title);
+                return super.onOptionsItemSelected(item)
+            }
         }
 
     }
