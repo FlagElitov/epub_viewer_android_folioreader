@@ -457,7 +457,7 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        //Log.d(LOG_TAG, "-> onOptionsItemSelected -> " + item.getItemId());
+        Log.d(LOG_TAG, "-> onOptionsItemSelected -> " + item.getItemId());
 
         when (item.itemId) {
             android.R.id.home -> {
